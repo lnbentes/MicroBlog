@@ -14,7 +14,7 @@ import { CadastraComponent } from './cadastra/cadastra.component';
     MenuComponent,
     RodapeComponent,
     LoginComponent,
-    CadastraComponent
+    CadastraComponent,
   ],
   imports: [
     BrowserModule,
