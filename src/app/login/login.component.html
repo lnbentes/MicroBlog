@@ -11,12 +11,12 @@
 
           <form>
             <div class="form-grup">
-              <label for="usuario">Nome do usuario:</label>
-              <input type="text" class="form-control badge-pill">
+              <label for="usuario">E-mail de usuario:</label>
+              <input type="text" class="form-control badge-pill" id="loginUsuario">
             </div>
             <div class="form-grup">
               <label for="senha">Senha:</label>
-              <input type="password" class="form-control badge-pill">
+              <input type="password" class="form-control badge-pill" id="loginSenha">
             </div>
             <div class="p-3">
               <button class="btn btn-outline-dark w-50 d-block mx-auto badge-pill">Entrar</button>
@@ -24,7 +24,7 @@
           </form>
 
           <hr>
-          <p class="text-center">Não tem cadastro... <a href="">Crie uma agora!</a></p>
+          <p class="text-center">Não tem cadastro... <a routerLink="/cadastra">Crie uma agora!</a></p>
 
         </div>
 
