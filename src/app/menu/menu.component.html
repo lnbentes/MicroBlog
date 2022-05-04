@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="https://github.com/lnbentes.png" width="40" height="40" alt="Imagem do user" class="img-fluid rounded-circle border border-light">
+  <a class="navbar-brand" routerLink="/entrada">
+    <img src="{{foto}}" width="40" height="40" alt="Imagem do user" class="img-fluid rounded-circle border border-light">
   </a>
-  <a class="navbar-brand" href="#">Lucas Bentes</a>
+  <a class="navbar-brand" routerLink="/entrada">{{nome}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto"></ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-light badge-pill mx-3 my-2 my-sm-0"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</button>
+      <button class="btn btn-light badge-pill mx-3 my-2 my-sm-0" (click)="sair()"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</button>
     </form>
   </div>
 </nav>
