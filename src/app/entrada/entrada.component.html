@@ -14,8 +14,8 @@
 
       <div class="row d-flex justify-content-end mt-3 mb-5">
         <div class="col-md-8">
-          <button type="button" class="btn btn-light mr-3" data-toggle="modal" data-target="#exampleModal">Nova Postagem</button>
-          <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+          <button type="button" class="btn btn-light badge-pill mr-3" data-toggle="modal" data-target="#exampleModal">Nova Postagem</button>
+          <a class="btn btn-outline-light badge-pill" href="#postagens">Ver Postagens</a>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="temas">Escolha um tema ou <a href="">cadastre um novo</a>: </label>
+                  <label for="temas">Escolha um tema ou <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>: </label>
                   <select class="form-control" id="temas">
                     <option value="">1</option>
                     <option>2</option>
@@ -53,8 +53,8 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-              <button type="button" class="btn btn-outline-secondary">Postar</button>
+              <button type="button" class="btn btn-secondary badge-pill" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-outline-secondary badge-pill">Postar</button>
             </div>
           </div>
         </div>

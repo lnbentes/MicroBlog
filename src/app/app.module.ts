@@ -11,6 +11,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { LoginComponent } from './login/login.component';
 import { CadastraComponent } from './cadastra/cadastra.component';
 import { EntradaComponent } from './entrada/entrada.component';
+import { TemaComponent } from './tema/tema.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { EntradaComponent } from './entrada/entrada.component';
     LoginComponent,
     CadastraComponent,
     EntradaComponent,
+    TemaComponent,
   ],
   imports: [
     BrowserModule,

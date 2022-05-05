@@ -3,3 +3,14 @@
 html{
   scroll-behavior: smooth;
 }
+
+.fonte-54{
+  font-size: 54pt;
+}
+.fonte-18{
+  font-size: 18pt;
+}
+
+.altura-60{
+  min-height: 60vh;
+}
