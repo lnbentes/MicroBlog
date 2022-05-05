@@ -43,4 +43,15 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  validaEmail() {
+    let regex = /.+\@.+\..+/
+    if(this.usuarioLogin.usuario.match(regex)) {
+      let txtEmail = (<HTMLDivElement>document.querySelector('#loginUsuario'))
+      txtEmail.classList.add("is-valid")
+    } else {
+      let txtEmail = (<HTMLDivElement>document.querySelector('#loginUsuario'))
+      txtEmail.classList.add("is-invalid")
+    }
+  }
+
 }

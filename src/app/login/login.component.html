@@ -12,7 +12,7 @@
           <form>
             <div class="form-grup">
               <label for="usuario">E-mail de usuario:</label>
-              <input type="text" class="form-control badge-pill" id="loginUsuario" name="usuario" [(ngModel)]="usuarioLogin.usuario">
+              <input type="text" class="form-control badge-pill" id="loginUsuario" name="usuario" [(ngModel)]="usuarioLogin.usuario" (keyup)="validaEmail()">
             </div>
             <div class="form-grup">
               <label for="senha">Senha:</label>
