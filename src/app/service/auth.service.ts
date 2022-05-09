@@ -13,11 +13,11 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   entra(usuariorLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>("http://localhost:8080/usuario/logar", usuariorLogin);
+    return this.http.post<UsuarioLogin>("https://bplnbentes.herokuapp.com/usuario/logar", usuariorLogin);
   }
 
   cadastra(usuario: Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>("http://localhost:8080/usuario/cadastrar", usuario);
+    return this.http.post<Usuario>("https://bplnbentes.herokuapp.com/usuario/cadastrar", usuario);
   }
 
   logado(){
