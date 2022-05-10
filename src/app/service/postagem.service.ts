@@ -21,15 +21,19 @@ export class PostagemService {
     return this.http.get<Postagem[]>("https://bplnbentes.herokuapp.com/postagens", this.token)
   }
 
-  postpostagens(postagens: Postagem): Observable<Postagem>{
+  getByIdPostagem(id: number): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://bplnbentes.herokuapp.com/postagens/${id}`, this.token)
+  }
+
+  postPostagens(postagens: Postagem): Observable<Postagem>{
     return this.http.post<Postagem>("https://bplnbentes.herokuapp.com/postagens", postagens, this.token)
   }
 
-  putpostagens(postagens: Postagem): Observable<Postagem>{
+  putPostagens(postagens: Postagem): Observable<Postagem>{
     return this.http.put<Postagem>("https://bplnbentes.herokuapp.com/postagens", postagens, this.token)
   }
 
-  deletepostagens(id: number){
+  deletePostagens(id: number){
     return this.http.delete(`https://bplnbentes.herokuapp.com/postagens/${id}`, this.token)
   }
 

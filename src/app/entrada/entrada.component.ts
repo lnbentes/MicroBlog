@@ -74,7 +74,7 @@ export class EntradaComponent implements OnInit {
     this.postagem.usuario = this.user //Aqui estamos fazendo a relacao do que esta na postagem com o usuario logado
 
     //Agora que o objto postagem foi todo prenchido nos enviamos pro back
-    this.postagemService.postpostagens(this.postagem).subscribe((resp: Postagem) =>{
+    this.postagemService.postPostagens(this.postagem).subscribe((resp: Postagem) =>{
       this.postagem = resp
       alert("Postagem realizada com sucesso")
       this.postagem = new Postagem() //Qunado finalizar a postagem ter certeza de limpar os campo
