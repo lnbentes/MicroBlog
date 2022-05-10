@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastraComponent } from './cadastra/cadastra.component';
 import { EntradaComponent } from './entrada/entrada.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { TemaComponent } from './tema/tema.component';
     CadastraComponent,
     EntradaComponent,
     TemaComponent,
+    TemaDeleteComponent,
+    TemaEditComponent,
   ],
   imports: [
     BrowserModule,

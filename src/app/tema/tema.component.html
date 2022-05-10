@@ -46,8 +46,8 @@
             <th scope="row">{{tema.id}}</th>
             <td>{{tema.descricao}}</td>
             <td class="d-flex justify-content-end">
-              <button type="button" class="btn btn-secondary mr-3">Editar</button>
-              <button type="button" class="btn btn-outline-danger">Apagar</button>
+              <button type="button" class="btn btn-secondary mr-3" [routerLink]="['/temaEdit', tema.id]">Editar</button>
+              <button type="button" class="btn btn-outline-danger" [routerLink]="['/temaDelete', tema.id]">Apagar</button>
             </td>
           </tr>
         </tbody>
