@@ -1,0 +1,62 @@
+<div class="container-fluid">
+
+  <div class="row align-items-center">
+
+    <!-- inicio esquerdo -->
+    <div class="col-md-6" id="img-bg"></div>
+    <!-- final esuqerdo -->
+
+    <!-- inicio direito -->
+    <div class="col-md-6 mt-5 mb-5">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-10">
+          <h1 class="text-center">Cadastro</h1>
+
+          <form>
+            <div class="form-grup">
+              <label for="usuario">Nome:</label>
+              <input type="text" class="form-control badge-pill" id="cadastroNome" name="nome" [(ngModel)]="usuario.nome">
+            </div>
+            <div class="form-grup">
+              <label for="usuario">E-mail de usuário:</label>
+              <input type="email" class="form-control badge-pill" id="cadastroUsuario" name="email" [(ngModel)]="usuario.usuario">
+            </div>
+            <div class="form-grup">
+              <label for="usuario">Link da Foto:</label>
+              <input type="text" class="form-control badge-pill" id="cadastroFoto" name="foto" [(ngModel)]="usuario.foto">
+            </div>
+            <div class="form-grup">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control badge-pill" id="cadastroSenha" (input)="confirmSenha($event)">
+            </div>
+            <div class="form-grup">
+              <label for="senha">Confirmar senha:</label>
+              <input type="password" class="form-control badge-pill" id="cadastroConfirmaSenha" name="senha" [(ngModel)]="usuario.senha">
+            </div>
+            <div class="form-grup">
+              <label for="inputState">Tipo de Usuario</label>
+              <select id="inputState" class="form-control badge-pill" (change)="tipoUsuario($event)">
+              <option selected>Escolha...</option>
+              <option value="adm">Administrador</option>
+              <option value="user">Usuario</option>
+              </select>
+            </div>
+
+
+            <!-- inicio botoes -->
+            <div class="p-3 d-flex justify-content-around">
+              <button type="submit" class="btn btn-outline-danger botaoWidth d-block mx-auto badge-pill" routerLink="/login">Cancelar</button>
+              <button type="submit" class="btn btn-outline-success botaoWidth d-block mx-auto badge-pill" (click)="cadastra()">Cadastra</button>
+            </div>
+            <!-- final botoes -->
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <!-- final direito -->
+
+  </div>
+
+</div>

@@ -1,0 +1,51 @@
+<div class="container mt-5 mb-5">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center text-secondary">Atualizar o Usuario</h1>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+
+      <form>
+        <div class="form-grup">
+          <label for="usuario">Nome:</label>
+          <input type="text" class="form-control badge-pill" id="cadastroNome" name="nome" [(ngModel)]="usuario.nome">
+        </div>
+        <div class="form-grup">
+          <label for="usuario">E-mail de usuário:</label>
+          <input type="email" class="form-control badge-pill" id="cadastroUsuario" name="email" [(ngModel)]="usuario.usuario">
+        </div>
+        <div class="form-grup">
+          <label for="usuario">Link da Foto:</label>
+          <input type="text" class="form-control badge-pill" id="cadastroFoto" name="foto" [(ngModel)]="usuario.foto">
+        </div>
+        <div class="form-grup">
+          <label for="senha">Senha:</label>
+          <input type="password" class="form-control badge-pill" id="cadastroSenha" (input)="confirmSenha($event)">
+        </div>
+        <div class="form-grup">
+          <label for="senha">Confirmar senha:</label>
+          <input type="password" class="form-control badge-pill" id="cadastroConfirmaSenha" name="senha" [(ngModel)]="usuario.senha">
+        </div>
+        <div class="form-grup">
+          <label for="inputState">Tipo de Usuario</label>
+          <select id="inputState" class="form-control badge-pill" (change)="tipoUsuario($event)">
+          <option selected>Escolha...</option>
+          <option value="adm">Administrador</option>
+          <option value="user">Usuario</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="d-flex justify-content-center mt-3">
+        <button type="button" class="btn btn-secondary mr-3" routerLink="/entrada">Cancelar</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="atualizar()">Atualizar</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

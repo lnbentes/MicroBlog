@@ -1,0 +1,42 @@
+<div class="container-fluid">
+
+  <div class="row align-items-center">
+    <!-- inicio esuqerdo -->
+    <div class="col-md-6">
+
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-8">
+          <h1 class="text-center">Bem vindo de volta</h1>
+
+          <form>
+            <div class="form-grup">
+              <label for="usuario">E-mail de usuario:</label>
+              <input type="text" class="form-control badge-pill" id="loginUsuario" name="usuario" [(ngModel)]="usuarioLogin.usuario" (keyup)="validaEmail()">
+            </div>
+            <div class="form-grup">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control badge-pill" id="loginSenha" name="senha" [(ngModel)]="usuarioLogin.senha">
+            </div>
+            <div class="p-3">
+              <button class="btn btn-outline-dark w-50 d-block mx-auto badge-pill" (click)="entrar()">Entrar</button>
+            </div>
+          </form>
+
+          <hr>
+          <p class="text-center">Não tem cadastro... <a routerLink="/cadastra">Crie uma agora!</a></p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- final esquerdo -->
+
+    <!-- inicio direito -->
+    <div class="col-md-6" id="img-bg"></div>
+    <!-- final direito -->
+
+  </div>
+
+</div>
