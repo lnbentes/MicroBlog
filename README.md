@@ -2,26 +2,32 @@
 
 Criando um blog pessoal usando o Angular
 
-## Development server
+# MicroBlog
+Nesse projeto visa montar um micro blog que faz consulta a uma banco de dados utilizando json a través de uma API proprietária. Nesse site o usuário cadastrado pode fazer postagem por temas pre cadastrados pelo administrador.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Rodar a aplicação localmente:
+1. Instale `npm install` no terminal da aplicação
+2. Rode a aplicação trasvez do comando `ng serve` no terminal da aplicação
+3. Acesse o [http://localhost:4200/](http://localhost:4200/) para ver em funcionamento
 
-## Code scaffolding
+## Rodar a aplicação remotamente:
+Em construção
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como utilizar:
 
-## Build
+Cadastro:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![calculadoraMenu](https://user-images.githubusercontent.com/93729409/180094354-62f49bbc-f2de-4f08-b3cc-71d2e78cbda4.gif)
 
-## Running unit tests
+Login:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![hipotenusa](https://user-images.githubusercontent.com/93729409/180094420-859c2ecd-59e7-4ba1-be59-7680d57c06fc.gif)
 
-## Running end-to-end tests
+Home page:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![cateto](https://user-images.githubusercontent.com/93729409/180094436-ce2b3530-72a4-4680-ba35-2461e0a9988c.gif)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tecnologias usadas:
+* AngularJS
+* BootStrap
+* NgxSpinner
